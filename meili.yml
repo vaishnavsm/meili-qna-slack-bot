@@ -1,0 +1,13 @@
+version: '3.6'
+services:
+  meili:
+    image: getmeili/meilisearch:v0.28
+    environment:
+      - MEILI_MASTER_KEY # Set with .env
+    ports:
+      - "7700:7700"
+    volumes:
+      - "qna_meili:/meili_data"
+    command: ["meilisearch", "--env=development"]
+volumes:
+  qna_meili:

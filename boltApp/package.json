@@ -1,0 +1,16 @@
+{
+  "name": "boltapp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "node src/app.js"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@slack/bolt": "^3.12.1",
+    "dotenv": "^16.0.1",
+    "meilisearch": "^0.27.0"
+  }
+}
